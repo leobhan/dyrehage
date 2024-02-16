@@ -26,6 +26,7 @@ public:
 		:dyr(navn, art, vekt), m_beveg{ bevegelse } {}
 
 	std::string getBeveg() { return m_beveg; }
+	void getSound();
 
 	void printBeveg() override
 	{
