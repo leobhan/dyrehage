@@ -29,7 +29,7 @@ public:
 	{
 		if (type == "pattedyr")
 		{
-			if(beveg == "") m_dyrVec.push_back(std::make_shared<pattedyr>(navn, art, vekt));
+			if (beveg == "") m_dyrVec.push_back(std::make_shared<pattedyr>(navn, art, vekt));
 			else m_dyrVec.push_back(std::make_shared<pattedyr>(navn, art, vekt, beveg));
 		}
 		else if (type == "fugl")
@@ -42,6 +42,7 @@ public:
 			if (beveg == "") m_dyrVec.push_back(std::make_shared<fisk>(navn, art, vekt));
 			else m_dyrVec.push_back(std::make_shared<fisk>(navn, art, vekt, beveg));
 		}
+		else std::cout << "typen eksiterer ikke!" << std::endl;
 	}
 
 	//funksjon for å fjerne dyr
